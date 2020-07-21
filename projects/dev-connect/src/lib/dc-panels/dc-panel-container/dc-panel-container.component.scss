@@ -1,0 +1,9 @@
+.dc-panel-container{
+    //position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    //display: block;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+}

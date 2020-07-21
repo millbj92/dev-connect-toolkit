@@ -1,0 +1,20 @@
+@import '../../../../styles/kalie.theme';
+.dc-drawer-panel{
+    background-color: rgba($color-gray, .8);
+    padding: .5rem 2rem;
+    box-shadow: $shadow-dark;
+    transition: all .2s;
+    display: flex;
+    flex-direction: column;
+
+    & .dc-panel-heading-line{
+        border-bottom: $line;
+        margin: 1rem 0;
+    }
+
+    & .dc-panel-heading{
+        text-align: center;
+        color: $color-primary-dark;
+    }
+}
+

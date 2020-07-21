@@ -1,0 +1,27 @@
+@import '../../../../styles/kalie.theme';
+
+:host{
+    background-color: $color-gray;
+    border: none;
+    border-radius: 50%;
+    box-shadow: $elevation-1;
+    height: 3rem;
+    width: 3rem;
+    outline: none;
+    transition: all .2s;
+    color: inherit;
+
+    &:hover{
+        box-shadow: $elevation-2;
+        transform: scale(1.2) translateY(-.25rem);
+    }
+
+    &:active{
+        box-shadow: $elevation-1;
+        transform: scale(1) translateY(0);
+    }
+
+    &.no-hover{
+        transform: scale(1) translateY(0);
+    }
+}

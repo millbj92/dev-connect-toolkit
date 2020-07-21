@@ -1,0 +1,23 @@
+@import '../../../../../../styles/kalie.theme';
+:host.dc-drawer-list-item{
+    display: flex;
+    margin-top: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all .2s;
+    min-height: 3rem;
+    font-size: 1.4rem;
+
+    &:hover{
+        color: $color-gray-light-1;
+        background-image: linear-gradient(to right bottom, $color-secondary, $color-secondary-medium);
+    }
+
+    &.dc-drawer-list-item-selected{
+        color: $color-gray-light-1;
+        background-image: linear-gradient(to right bottom, $color-primary-dark, $color-primary-medium);
+    }
+}

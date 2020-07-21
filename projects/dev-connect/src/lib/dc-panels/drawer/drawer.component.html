@@ -1,0 +1,17 @@
+<div *ngIf="heading" [ngStyle]="{'cursor': !slideable ? 'default' : 'grab'}">
+        <span  class="dc-drawer-heading-container handle">
+            <h3 class="heading-tertiary dc-drawer-heading">{{heading}}</h3>
+            <dc-icon *ngIf="collapsible" (click)="toggleCollapse()" [ngClass]="{'dc-properties-button' : true, 'open' : !collapsed}" style="cursor: pointer;" name="chevron"></dc-icon>
+        </span>
+        <div class="dc-heading-line"></div>
+</div>
+        <div *ngIf="scrollable" [ngStyle]="{'max-height': collapsible === true && collapsed === true ? '0' : '100%', 'opacity': collapsible === true && collapsed === true ? '0' : '1'}" class="dc-scroll-container">
+            <ng-container *ngTemplateOutlet="tempOutlet"></ng-container>
+        </div>
+        <div *ngIf="!scrollable">
+            <ng-container *ngTemplateOutlet="tempOutlet"></ng-container>
+        </div>
+    <ng-template #tempOutlet>
+        <ng-content></ng-content>
+    </ng-template>
+

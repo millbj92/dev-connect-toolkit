@@ -1,0 +1,14 @@
+@import '../../../../styles/kalie.theme';
+:host{
+    display: flex;
+    align-items: center;
+    box-shadow: $elevation-2;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    padding: 0 1rem;
+    font-family: $font-family;
+    z-index: 1000;
+}

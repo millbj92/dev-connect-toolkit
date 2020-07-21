@@ -1,0 +1,72 @@
+@import '../../../../styles/kalie.theme';
+:host.dc-drawer{
+    flex-grow: 1;
+    min-height: 0;
+    flex-basis: 20rem;
+    display: flex;
+    flex-direction: column;
+    transition: all .2s;
+    & .dc-heading-line{
+        border-bottom: $line;
+    }
+
+    & .dc-drawer-heading{
+        font-size: 1rem;
+        color: $color-primary-dark;
+    }
+
+    &.collapsed{
+        flex-grow: 0;
+        flex-basis: 4rem;
+    }
+}
+
+.dc-drawer-heading-container{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    margin-top: -3px;
+}
+
+.dc-scroll-container{
+    overflow-y: auto;
+    margin-right: -1rem;
+    //transition: all .2s;
+    &::-webkit-scrollbar{
+        width: 10px;
+    }
+    &::-webkit-scrollbar-thumb{
+        background: $color-primary-dark;
+        border-radius: 5px;
+    }
+    &::-webkit-scrollbar-track{
+        background-image: linear-gradient(to bottom, $color-secondary, $color-secondary-medium);
+        border-radius: 5px;
+    }
+}
+
+.dc-properties-button{
+    font-size: 1.6rem; 
+    color: white;
+    transition: all .2s;
+
+    &:hover{
+        transform: scale(1.2) translateY(.25rem);
+    }
+
+    &:active{
+        transform: scale(1) translateY(0);
+    }
+
+    &.open{
+        transform: rotate(180deg);
+
+        &:hover{
+            transform: scale(1.2) translateY(-.25rem) rotate(180deg);
+        }
+    
+        &:active{
+            transform: scale(1) translateY(0) rotate(180deg);
+        }
+    }
+}

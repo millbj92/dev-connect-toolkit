@@ -1,0 +1,39 @@
+<nav class="app-nav" dc-nav color="secondary-medium">
+  <button (click)="togglePanel()" dc-icon-button noHover="true" flat="true"><dc-icon name="hamburger"></dc-icon></button>
+  <div style="flex: 1 1 auto"></div>
+  <img src="../assets/Logo2.png" height="50px" width="50px" />
+  <h2>Dev Connect Toolkit</h2>
+  <div style="flex: 1 1 auto"></div>
+</nav>
+<dc-panel-container>
+  <dc-drawer-panel heading="Components" mode='slide' [showPanel]="showPanel">
+    <dc-drawer scrollable="true">
+      <ul dc-drawer-list>
+          <li dc-drawer-list-item>
+            Buttons
+          </li>
+          <li dc-drawer-list-item>
+            Icons
+          </li>
+          <li dc-drawer-list-item>
+            Nav
+          </li>
+          <li dc-drawer-list-item>
+            Drawer Panel
+          </li>
+      </ul>
+  </dc-drawer>
+  </dc-drawer-panel>
+  <dc-panel-content>
+    <router-outlet></router-outlet>
+  </dc-panel-content>
+  
+</dc-panel-container>
+
+
+
+<!--<div class="container">
+  <button dc-icon-button [color]="selectedColor" [disabled]="btnDisabled"><dc-icon name="eye"></dc-icon></button>
+  <button (click)="randomColor()">Random Color</button>
+  <button (click)="toggleDisabled()">Toggle Disabled</button>
+</div>-->
