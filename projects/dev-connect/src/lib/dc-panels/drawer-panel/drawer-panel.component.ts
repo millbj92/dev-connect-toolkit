@@ -11,7 +11,6 @@ import {
   Output,
   EventEmitter,
 } from '@angular/core';
-import { timeStamp } from 'console';
 import { isUndefined } from 'util';
 @Component({
   selector: 'dc-drawer-panel',
