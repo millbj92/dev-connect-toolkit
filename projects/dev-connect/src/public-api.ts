@@ -9,6 +9,8 @@ export * from './lib/dc-panels/drawer/drawer.component';
 export * from './lib/dc-panels/drawer/dc-drawer-list/dc-drawer-list.component';
 export * from './lib/dc-panels/drawer/dc-drawer-list/dc-drawer-list-item/dc-drawer-list-item.component';
 export * from './lib/dc-panels/drawer-panel/drawer-panel.component';
+export * from './lib/dc-panels/dc-panel-container/dc-panel-container.component';
+export * from './lib/dc-panels/dc-panel-content/dc-panel-content.component';
 export * from './lib/dc-panels/dc-panels.module';
 export * from './lib/dc-buttons/dc-buttons.module';
 export * from './lib/dc-buttons/icon-button/icon-button.component';
